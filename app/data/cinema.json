@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "CGR Dragon",
+    "adress": "8, Cours des Dames",
+    "cp": "17000",
+    "ville": "La Rochelle",
+    "latitude": "46.1577",
+    "longitude": "-1.15359"
+  },
+  {
+    "id": 2,
+    "name": "Méga CGR La Rochelle",
+    "adress": "ave Becquerel",
+    "cp": "17000",
+    "ville": "La Rochelle",
+    "latitude": "46.1467",
+    "longitude": "-1.15379"
+  },
+  {
+    "id": 3,
+    "name": "CGR Olympia",
+    "adress": "54 rue Chaudrier",
+    "cp": "17000",
+    "ville": "La Rochelle",
+    "latitude": "46.1626",
+    "longitude": "-1.152"
+  },
+  {
+    "id": 4,
+    "name": "La Coursive Scène Nationale",
+    "adress": "4, rue Saint-Jean-du-Perot",
+    "cp": "17000",
+    "ville": "La Rochelle",
+    "latitude": "46.1567",
+    "longitude": "-1.15462"
+  },
+  {
+    "id": 5,
+    "name": "Casino de Fouras",
+    "adress": "Place Bugeau",
+    "cp": "17450",
+    "ville": "Fouras",
+    "latitude": "45.9899",
+    "longitude": "-1.09799"
+  },
+  {
+    "id": 6,
+    "name": "La Maline",
+    "adress": "Le Mail",
+    "cp": "17670",
+    "ville": "La Couarde-sur-Mer",
+    "latitude": "46.192",
+    "longitude": "-1.42598"
+  },
+  {
+    "id": 7,
+    "name": "Le Goëland",
+    "adress": "1 rue Général Leclerc",
+    "cp": "85460",
+    "ville": "L' Aiguillon-sur-Mer",
+    "latitude": "46.3338",
+    "longitude": "-1.30502"
+  },
+  {
+    "id": 8,
+    "name": "Eldorado",
+    "adress": "5, rue de la République",
+    "cp": "17310",
+    "ville": "Saint-Pierre-d'Oléron",
+    "latitude": "45.9436",
+    "longitude": "-1.30846"
+  }
+]

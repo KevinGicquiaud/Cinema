@@ -1,0 +1,27 @@
+
+<h2>Liste des cinémas</h2>
+<label>Search: <input ng-model="search.name"></label>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>Nom</td>
+            <td>Ville</td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="cinema in cinemas | filter:search">
+            <td>{{ cinema.name }}</td>
+            <td>{{ cinema.ville }}</td>
+            <td>
+                <button>
+                    Détail
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div id="map_canvas">
+    <ui-gmap-google-map></ui-gmap-google-map>
+</div>
