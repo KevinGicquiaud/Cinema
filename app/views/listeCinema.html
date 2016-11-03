@@ -1,26 +1,27 @@
-
 <h2>Liste des cinémas</h2>
 <label>Search: <input ng-model="search.name"></label>
 <table class="table table-bordered">
     <thead>
-        <tr>
-            <td>Nom</td>
-            <td>Ville</td>
-            <td></td>
-        </tr>
+    <tr>
+        <td>Nom</td>
+        <td>Ville</td>
+        <td></td>
+    </tr>
     </thead>
     <tbody>
-        <tr ng-repeat="cinema in cinemas | filter:search">
-            <td>{{ cinema.name }}</td>
-            <td>{{ cinema.ville }}</td>
-            <td>
-                <button>
-                    Détail
-                </button>
-            </td>
-        </tr>
+    <tr ng-repeat="cinema in cinemas | filter:search">
+        <td>{{ cinema.name }}</td>
+        <td>{{ cinema.ville }}</td>
+        <td>
+            <button>
+                Détail
+            </button>
+        </td>
+    </tr>
     </tbody>
 </table>
 
-<ng-map center="[40.74, -74.18]"></ng-map>
-
+<ng-map center="[{{ map.center.latitude }}, {{ map.center.longitude }}]">
+    <marker ng-repeat="cinema in cinemas | filter:search" position="{{ cinema.latitude}},{{cinema.longitude}}"
+            title="{{cinema.name}}"></marker>
+</ng-map>

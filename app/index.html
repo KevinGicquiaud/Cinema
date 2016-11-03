@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr" data-ng-app="myApp">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Cinema</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="app.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cinema</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app.css">
 
 </head>
 <body>
-  <ul class="menu">
+<ul class="menu">
     <li><a ui-sref="listeCinema">Liste cinema</a></li>
     <li><a ui-sref="detailsCinema">Details cinema</a></li>
-  </ul>
-  <div ui-view></div>
+</ul>
+<div ui-view></div>
 
 
-  <script src="lib/angular/angular.min.js"></script>
-  <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
-  <script src='lib/ngmap.js'></script>
+<script src="lib/angular/angular.min.js"></script>
+<script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="app.js"></script>
 
-  <script src="app.js"></script>
+<script src="js/controller/detailsCinema.js"></script>
+<script src="js/controller/listeCinema.js"></script>
+<script src='lib/ngmap.js'></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?callback=angular.noop&key=AIzaSyCnLtKkG0Z3wiVwFyHZES6iWfIZOQPpems"></script>
 
-  <script src="js/controller/detailsCinema.js"></script>
-  <script src="js/controller/listeCinema.js"></script>
 </body>
 </html>
