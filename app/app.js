@@ -1,8 +1,8 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', ['ui.router', 'uiGmapgoogle-maps', 'myApp.detailsCinema', 'myApp.listeCinema'])
-    .config(['$stateProvider','uiGmapGoogleMapApiProvider', router, configMap]);
+angular.module('myApp', ['ui.router', 'ngMap', 'myApp.detailsCinema', 'myApp.listeCinema'])
+    .config(['$stateProvider','uiGmapGoogleMapApiProvider', router]);
 
 function router($stateProvider) {
   var listeCinemaState = {
@@ -22,9 +22,3 @@ function router($stateProvider) {
   $stateProvider.state(detailsCinemaState);
 }
 
-function configMap(uiGmapGoogleMapApiProvider) {
-  uiGmapGoogleMapApiProvider.configure({
-    v: '3.20',
-    libraries: 'weather,geometry,visualization'
-  });
-}
