@@ -21,7 +21,7 @@
     </tbody>
 </table>
 
-<ng-map center="[{{ map.center.latitude }}, {{ map.center.longitude }}]">
+<ng-map center="[{{ map.center.latitude }}, {{ map.center.longitude }}]" style="width:800px; height: 400px">
     <marker ng-repeat="cinema in cinemas | filter:search" position="{{ cinema.latitude}},{{cinema.longitude}}"
             title="{{cinema.name}}"></marker>
 </ng-map>
