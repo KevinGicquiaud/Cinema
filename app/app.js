@@ -13,7 +13,7 @@ function router($stateProvider) {
     };
     var detailsCinemaState = {
         name: 'detailsCinema',
-        url: '/details_cinema',
+        url: '/details_cinema/:cinemaId',
         templateUrl: 'views/detailsCinema.html',
         controller: 'DetailsCinemaCtrl'
     };

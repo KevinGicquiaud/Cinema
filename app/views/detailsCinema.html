@@ -1,5 +1,38 @@
-<p>Ceci est la page cinema</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{mydata}}
-</p>
+<h2>{{ detailsCine.name}}</h2>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <td>Nom</td>
+        <td>Ville</td>
+        <td></td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>{{ detailsCine.name }}</td>
+        <td>{{ detailsCine.ville }}</td>
+    </tr>
+    </tbody>
+</table>
+
+<ng-map center="[{{ detailsCine.latitude }}, {{ detailsCine.longitude }}]" style="width:800px; height: 400px">
+    <marker position="{{ detailsCine.latitude}},{{detailsCine.longitude}}"
+            title="{{detailsCine.name}}"></marker>
+</ng-map>
+<h2>Films à l'affiche</h2>
+<table class="table table-bordered" border="1">
+    <thead>
+    <tr>
+        <td>Titre</td>
+        <td>Résumé</td>
+        <td></td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="film in films">
+        <td>{{ film.titre }}</td>
+        <td>{{ film.description}}</td>
+        <td>Horaires</td>
+    </tr>
+    </tbody>
+</table>

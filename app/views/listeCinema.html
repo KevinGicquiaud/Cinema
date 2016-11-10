@@ -13,9 +13,7 @@
         <td>{{ cinema.name }}</td>
         <td>{{ cinema.ville }}</td>
         <td>
-            <button>
-                Détail
-            </button>
+            <a ui-sref="detailsCinema({cinemaId: cinema.id})">Détails</a>
         </td>
     </tr>
     </tbody>
