@@ -15,13 +15,12 @@ class DB_PDO_MySQL {
     private $db;
 
 
-
     function __construct() {
         try {
             //Make sure you are using UTF-8
             $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
 
-            //Update the dbname username and password to suit your server
+            //Update the dbname username and password to suit your serezfzever
             $this->db = new PDO(
                     'mysql:host=localhost;dbname=projet_angular', 'root', 'root', $options
             );
