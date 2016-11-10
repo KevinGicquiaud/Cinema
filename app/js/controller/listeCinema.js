@@ -4,7 +4,8 @@ angular.module('myApp.listeCinema', [])
 
     .controller("listeCinemaCtrl", ['$scope', '$http', function ($scope, $http, NgMap) {
 
-        $http.get('data/cinema.json').then(function (response) {
+        console.log(location);
+        $http.get('http://localhost/Cinema/public/index.php/cinema').then(function (response) {
             $scope.cinemas = response.data;
         });
 
