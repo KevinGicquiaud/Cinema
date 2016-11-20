@@ -88,5 +88,7 @@ class DB_PDO_MySQL {
         return $r;
     }
 
+    function addCinema() {
 
+    }
 }

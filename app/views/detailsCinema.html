@@ -20,6 +20,7 @@
             title="{{detailsCine.name}}"></marker>
 </ng-map>
 <h2>Films à l'affiche</h2>
+
 <table class="table table-bordered" border="1">
     <thead>
     <tr>
@@ -32,7 +33,13 @@
     <tr ng-repeat="film in films">
         <td>{{ film.titre }}</td>
         <td>{{ film.description}}</td>
-        <td>Horaires</td>
+        <td>
+            <div>
+                <md-button ng-click="showAlert(film.id_film)" class="md-raised md-warn">
+                    Horaires
+                </md-button>
+            </div>
+        </td>
     </tr>
     </tbody>
 </table>

@@ -55,5 +55,17 @@ class Cinema
         return $projet;
     }
 
+    /**
+     * Manually wildcard routed method. all paths that begin with `all` will be
+     * routed to this method
+     *
+     * @url GET cinema/{id}/film/{idFilm}/horaire/
+     */
+    function addCinema($id,$idFilm)
+    {
+        $projet = $this->dp->getFilmHoraireFromCinema($id,$idFilm);
+        return $projet;
+    }
+
 }
 

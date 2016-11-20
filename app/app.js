@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', ['ui.router', 'ngMap', 'myApp.detailsCinema', 'myApp.listeCinema', 'myApp.addCinema'])
+angular.module('myApp', ['ui.router', 'ngMap', 'ngMaterial', 'myApp.detailsCinema', 'myApp.listeCinema', 'myApp.addCinema'])
     .config(['$stateProvider', router]);
 
 function router($stateProvider) {
